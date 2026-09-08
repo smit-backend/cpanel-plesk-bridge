@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/cpanel-plesk-bridge",
+    "description": "Unified PHP wrapper for cPanel UAPI and Plesk XML-RPC/REST APIs to automate server provisioning and DNS records.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\PanelBridge\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\PanelBridge\\PackageServiceProvider"
+            ]
+        }
+    }
+}
